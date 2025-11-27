@@ -358,3 +358,15 @@ body {
 
 }
 }
+
+.experiment-highlight ul {
+    margin: 0;
+    padding-left: 20px;
+    white-space: normal;
+    display: block;
+}
+
+.experiment-highlight li {
+    display: list-item;
+    white-space: normal;
+}
