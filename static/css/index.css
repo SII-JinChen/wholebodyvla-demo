@@ -371,28 +371,31 @@ body {
     white-space: normal;
 }
 
-/* make nav compact */
+/* Whole nav smaller + compact */
 .left-nav-menu {
-    font-size: 12px;           /* 全局缩小字体 */
-    line-height: 1.2;          /* 更紧行距 */
-    padding-left: 0.5rem;
+    font-size: 12px;
+    margin: 0;
+    padding-left: 0;     /* 确保导航栏完全左对齐 */
+    line-height: 1.25;
 }
 
-.left-nav-item {
-    padding: 2px 0;            /* 删掉多余垂直 padding */
-}
-
+/* Reviewer heading (左对齐) */
 .left-nav-heading {
     margin-top: 10px;
-    font-size: 11px;
-    opacity: 0.7;
-    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px 0;
+    font-size: 12px;
 }
 
+/* 子项：左对齐+缩进 */
 .left-nav-subitem {
-    padding-left: 12px;        /* 子目录缩进 */
     display: block;
+    padding-left: 12px;  /* ← 子项缩进，但文字仍然左对齐 */
+    margin: 2px 0;
 }
+
+/* 链接样式保持 */
 .left-nav-subitem a {
-    font-size: 11px;           /* 子目录更小字体 */
+    font-size: 11px;
+    display: block;
 }
