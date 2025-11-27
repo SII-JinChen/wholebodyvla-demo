@@ -399,3 +399,77 @@ body {
     font-size: 11px;
     display: block;
 }
+
+/* 整体菜单稍微缩小一点 */
+.left-nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+/* Reviewer 标题：左对齐、小号全大写、带分隔线 */
+.left-nav-heading {
+  margin: 10px 0 4px;
+  padding: 4px 0 2px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8e9aae;
+  border-bottom: 1px solid rgba(142, 154, 174, 0.3);
+}
+
+/* 子项：左对齐 + 轻微缩进 + 左侧竖线，视觉上成组 */
+.left-nav-subitem {
+  position: relative;
+  margin: 2px 0;
+  padding: 2px 0 2px 14px; /* 这一点缩进就是“缩进但左对齐”的关键 */
+}
+
+/* 左边竖线 */
+.left-nav-subitem::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(142, 154, 174, 0.4);
+}
+
+/* 小圆点 */
+.left-nav-subitem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(142, 154, 174, 0.9);
+}
+
+/* 链接样式：更紧凑，颜色柔一点 */
+.left-nav-link {
+  display: block;
+  font-size: 11px;
+  color: #d7dde9;
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+/* hover 效果：背景稍微亮一点，不突兀 */
+.left-nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transform: translateX(1px);
+}
+
+/* 如果你有 active 状态，可以用这个类名高亮 */
+.left-nav-link.active {
+  background: rgba(80, 140, 255, 0.25);
+  color: #ffffff;
+  font-weight: 600;
+}
