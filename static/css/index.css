@@ -582,3 +582,75 @@ body {
     background-color: #9bb4ff;  /* 小圆点变得更柔和 */
     vertical-align: middle;
 }
+
+/* NAV overall compact */
+.left-nav-menu {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    padding: 6px 10px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.15;  /* 更紧凑 */
+}
+
+/* Reviewer heading — 更大、更粗、更高亮 */
+.left-nav-heading {
+    margin-top: 14px;
+    margin-bottom: 4px;
+    padding: 4px 6px;
+
+    font-size: 12.5px;        /* 稍微变大 */
+    font-weight: 700;         /* 明显加粗 */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #ffffff; 
+    background: rgba(110, 150, 255, 0.25);  /* 高亮透明背景 */
+    border-left: 4px solid #7aa2ff;        /* 左侧蓝条更明显 */
+    border-radius: 3px;
+}
+
+/* Subitems: 左对齐 + 极轻的圆点 + 字体淡化 */
+.left-nav-subitem {
+    padding-left: 16px;      /* 缩进 */
+    margin: 2px 0;           /* 再紧凑一点 */
+    position: relative;
+}
+
+/* 子项圆点更小、更淡 */
+.left-nav-subitem::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 7px;
+
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(180, 200, 255, 0.45);  /* 更淡 */
+}
+
+/* 子项文字更淡，颜色弱化 */
+.left-nav-link {
+    display: block;
+    font-size: 11px;        /* 再小一点 */
+    color: rgba(220, 230, 255, 0.55);  /* 更淡 */
+    text-decoration: none;
+
+    padding: 1px 4px;       /* 更紧凑 */
+    border-radius: 3px;
+    transition: 0.12s ease;
+}
+
+/* Hover 时清晰但不刺眼 */
+.left-nav-link:hover {
+    background: rgba(110, 150, 255, 0.2);
+    color: white;
+    transform: translateX(2px);
+}
+
+/* Active item（可选） */
+.left-nav-link.active {
+    background: rgba(110, 150, 255, 0.35);
+    color: white;
+    font-weight: 600;
+}
