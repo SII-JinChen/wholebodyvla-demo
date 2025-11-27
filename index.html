@@ -705,8 +705,22 @@
             <div class="grid-section">
                 <h3 class="subsection-title">1. Object Generalization</h3>
                 <p class="section-description">
-                    Our policy demonstrates strong object-level generalization. Even when presented with unseen shapes, textures, or sizes, the agent maintains stable performance and adapts its manipulation strategy accordingly.
+                    The following demonstrations address several questions raised during the review process:
                 </p>
+                <ul class="section-description">
+                    <li>
+                        <strong>Reviewer Concern A:</strong> Whether the policy can generalize to objects with shapes and textures not seen during training.
+                        This video provides a direct example involving entirely novel objects.
+                    </li>
+                    <li>
+                        <strong>Reviewer Concern B:</strong> How the policy behaves under object-level distribution shifts.
+                        The results below illustrate stable performance without additional adaptation.
+                    </li>
+                    <li>
+                        <strong>Reviewer Concern C:</strong> Whether the model relies on instance-level memorization.
+                        The demonstration shows consistent behavior across unseen variants.
+                    </li>
+                </ul>
                 <div class="row">
                     <div class="col-md-8 mx-auto">
                         <div class="video-card">
